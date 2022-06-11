@@ -101,6 +101,8 @@ echo $TOKEN
 ## Connect to Dashboard
 ```bash
 kubectl proxy
+or 
+kubectl proxy --address=0.0.0.0 --disable-filter=true & >/dev/null
 ```
 In browser connect to http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 
@@ -136,3 +138,5 @@ kubectl run web --image=nginx:latest --dry-run=client -o yaml
 ```
 ### Homework
 * Create a deployment nginx. Set up two replicas. Remove one of the pods, see what happens.
+
+eyJhbGciOiJSUzI1NiIsImtpZCI6IjlrdlE0U0sxN0RLTzRIaDkwa0YzN1J5TDJjT2FMbVRFVUN1VmZuYmhRalEifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWM4Ym1kIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIwNGQ0MGE4YS1kZWNkLTQ0ZTctOTgxOS1lZWQ2NTBmZDkwNTYiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGVmYXVsdCJ9.UwtvpNiN8IWDmQjzCucwsFa5avt5PrDqOMpSGaDg7d7T40O8S0ZiHHcganwISsuhejGxxnbKjeXZxLV51CxWlVmtOvciM9h5HxcMhH5XmLKKI5ZAsXWT5vF3XuXyBTQ-Cbq8Ok68lk1dvdmIxkm7nasupTwcgqNirGonsv-38Bx7e1HLUbUW1G-XZj3_7GixOQtAujame7RkIyH_YFTJoJdaPW4ivs_eAFOifO-B0tMkX0NWROrGfBcVu98o4x9Z-7Pv6vKrnJkH0Y_lX5WGLXJ4XXgHNo8lff0xqXD8qm8y2yyqyRZeAdtESt3eR_YyeeqvKw7Tvg9kYV5YW-Fqcw
